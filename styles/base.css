@@ -1,0 +1,149 @@
+
+    /* Fonts */
+    .ubuntu-mono-regular {
+        font-family: "Ubuntu Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .ubuntu-mono-bold {
+        font-family: "Ubuntu Mono", monospace;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .ubuntu-mono-regular-italic {
+        font-family: "Ubuntu Mono", monospace;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .ubuntu-mono-bold-italic {
+        font-family: "Ubuntu Mono", monospace;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    body {
+        margin: 0 20px; /* Adds spacing to the sides of the page */
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    header img {
+        width: 100px; /* Adjust this value as needed */
+        height: auto; /* This maintains the aspect ratio */
+    }
+
+    /* Grid layout for large screens */
+    main {
+        grid-template-columns: 2fr 1fr; /* Side-by-side layout */
+    }
+
+    .learning-activities {
+        grid-column: span 2; /* Takes up two columns */
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Ubuntu Mono', sans-serif;
+        font-weight: 300;
+    }
+
+   
+
+    header span {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        background-color: tan;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        font-family: 'Ubuntu Mono', sans-serif;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        background-color: #ccc;
+        color: #615c5c;
+    }
+
+    h1 {
+        margin-top: 20px;
+        text-align: center;
+        text-decoration-color: #333;
+        font-family: 'Ubuntu Mono', sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        color:rgb(114, 114, 114);
+    }
+
+    h1 span {
+        display: block;
+        font-size: 0.8em;
+        margin-top: 5px;
+        font-weight: normal;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content:center;
+        margin: 20px;
+    }
+    .card img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+   
+
+    .card {
+        flex-basis: calc(50% - 10px);
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        font-family: "Ubuntu Mono", monospace;
+        font-weight: 100;
+        font-style: italic;
+        margin: 20px;
+    }
+
+    .card h2 {
+        margin-top: 0;
+    }
+
+    .footer-container {
+        text-align: center;
+        font-family: 'Ubuntu Mono', sans-serif;
+    }
