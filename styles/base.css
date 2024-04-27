@@ -126,6 +126,7 @@
         border-radius: 50%;
         margin-bottom: 10px;
         float: right;
+        
        
     }
    
@@ -139,13 +140,15 @@
         font-family: "Ubuntu Mono", monospace;
         font-weight: 100;
         font-style: italic;
-        margin: 20px;
+        margin: 40px;
         
     }
 
     .card h2 {
         margin-top: 0;
+        padding-right: 10px;
     }
+   
   
 
     .footer-container {
