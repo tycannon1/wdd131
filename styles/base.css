@@ -118,12 +118,15 @@
         display: flex;
         justify-content:center;
         margin: 20px;
+        
     }
     .card img {
         width: 150px;
         height: auto;
         border-radius: 50%;
         margin-bottom: 10px;
+        float: right;
+       
     }
    
 
@@ -137,11 +140,13 @@
         font-weight: 100;
         font-style: italic;
         margin: 20px;
+        
     }
 
     .card h2 {
         margin-top: 0;
     }
+  
 
     .footer-container {
         text-align: center;
