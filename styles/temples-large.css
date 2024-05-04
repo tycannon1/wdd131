@@ -1,0 +1,57 @@
+@media (min-width: 767px) {
+    header {
+        background-color: #f0f0f0; /* Change the background color as needed */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Title styling */
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    /* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Spread figures horizontally */
+        align-items: flex-start; /* Align items to the top */
+    }
+    
+    h2 {
+        text-align: center;
+        width: 100%; /* Ensure the h2 spans the full width */
+    }
+    
+    figure {
+        width: calc(33.33% - 20px); /* Three figures per row with 20px margin */
+        margin-bottom: 20px; /* Adjust the margin as needed */
+        border: 1px solid #ddd; /* Border color for the figure */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+    }
+    
+    figure img {
+        display: block;
+        width: 100%; /* Make the image fill the figure */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    figcaption {
+        padding: 10px;
+        background-color: #f0f0f0; /* Background color for the caption */
+        text-align: center;
+    }
+}

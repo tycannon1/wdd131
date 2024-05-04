@@ -1,0 +1,216 @@
+body {
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+header {
+    background-color: #f0f0f0; /* Change the background color as needed */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Title styling */
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.Home {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 30px; /* Adjust the margin as needed to center vertically */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 767px) {
+    
+    #menu {
+        display: block;
+    }
+
+    
+    .navigation.open {
+        display: block;
+    }
+    #menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+   
+    #menu .icon-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+    }
+    #menu.open .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu.open .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu.open .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    
+    .close-icon {
+        display: none;
+    }
+    
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: #b9b4e6;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navigation ul li {
+        margin-bottom: 10px;
+    }
+    
+    .navigation ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Ubuntu Mono', sans-serif;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    figure {
+        flex: 0 0 calc(50% - 20px); /* Two figures per row, with 20px margin */
+        margin: 20px;
+        border: 1px solid #ddd; /* Border color for the figure */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+    }
+    
+    figure img {
+        display: block;
+        width: 100%; /* Make the image fill the figure */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    figcaption {
+        padding: 10px;
+        background-color: #f0f0f0; /* Background color for the caption */
+        text-align: center;
+    }
+
+}
+@media (min-width: 767px) {
+    header {
+        background-color: #f0f0f0; /* Change the background color as needed */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Title styling */
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    /* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px; /* Add margin-top to separate from the top */
+}
+.Home {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Adjust the margin as needed to center vertically */
+}
+
+/* Figure styling */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minimum width as needed */
+    gap: 20px; /* Adjust the gap between figures as needed */
+    justify-items: center; /* Center the figures horizontally */
+}
+
+figure {
+    width: 100%; /* Set the width of the figure */
+    max-width: 300px; /* Limit maximum width for larger screens */
+    border: 1px solid #ddd; /* Border color for the figure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+}
+
+figure img {
+    display: block;
+    width: 100%; /* Make the image fill the figure */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire figure */
+}
+
+figcaption {
+    padding: 10px;
+    background-color: #f0f0f0; /* Background color for the caption */
+    text-align: center;
+}
+#menu {
+    display: none;
+}
+
+}
