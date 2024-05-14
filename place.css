@@ -1,16 +1,25 @@
 /* Default styles */
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     background-color: #f0f0f0;
     padding: 20px;
     text-align: center;
+    font-family: 'Ubuntu Mono', sans-serif;
+    background-color: bisque;
 }
 
 .hero {
     position: relative;
-    height: 300px; /* Set initial height for hero image */
+    height: 500px; /* Set initial height for hero image */
     background-image: url('images/portugal2.webp'); /* Default hero image */
     background-size: cover;
     background-position: center;
+    font-family: 'Ubuntu Mono', sans-serif;
 }
 
 .hero-overlay {
@@ -38,9 +47,15 @@ header {
     margin-left: 380px;
 }
 
+footer {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 30px; /* Adjust the margin as needed to center vertically */
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
     .hero {
-        background-image: url('hero-image-mobile.jpg'); /* Mobile hero image */
+        background-image: url('images/portugal1.webp'); /* Mobile hero image */
     }
 }
