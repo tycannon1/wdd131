@@ -1,4 +1,3 @@
-/* Default styles */
 .ubuntu-mono-regular {
     font-family: "Ubuntu Mono", monospace;
     font-weight: 400;
@@ -53,9 +52,30 @@ footer {
     font-family: 'Ubuntu Mono', sans-serif;
 }
 
+
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
     .hero {
         background-image: url('images/portugal1.webp'); /* Mobile hero image */
+    }
+    .hero-overlay {
+        flex-direction: column; /* Stack overlays vertically */
+        align-items: center; /* Center overlays horizontally */
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%; /* Full width for smaller screens */
+        margin-left: 0; /* Remove the left margin */
+        margin-bottom: 20px; /* Add spacing between boxes */
+        margin-top: 500px;
+    }
+
+    .right-box {
+        text-align: center; /* Center text in right box */
+        margin-top: 10px;
+    }
+    footer {
+        margin-top: 600px;
     }
 }
