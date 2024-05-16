@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyload Demo</title>
+    <meta name="description" content="Discover Page for Jackson Hole Chamber of Commerce">
+    <meta name="author" content="Ty Cannon">
+    <link rel="stylesheet" href="lazyload.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Jackson Hole Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.travelandleisure.com/thmb/Gzpp77bdxK2ThiFnifpshNvZ2G0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-grand-teton-natinoal-park-JACKSONHOLEWY0823-b7405185a64f49b5aaf48e15b01b7744.jpg">
+    <meta property="og:url" content="https://tycannon1.github.io/wdd230/">
+</head>
+<body>
+<main>
+    <header>
+        <div class="header-content">
+            <img src="images/jacksonlogo.png" alt="Chamber Logo" class="logo">
+            <h1 class="chamber-name">CHAMBER OF COMMERCE</h1>
+        </div>
+            <button id="menu" aria-label="Toggle Navigation Menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="close-icon">X</span>
+            </button>
+            <nav id="main-menu" class="navigation">
+                <ul>
+                    <li><a href="#">ACTIVITIES</a></li>
+                    <li><a href="#">LODGING</a></li>
+                    <li><a href="week01/chamber-site-plan.html">OUTDOORS</a></li>
+                    <li><a href="#">SHOPPING</a></li>
+                    <li><a href="#">FOR BUSINESS</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    
+        <div class="main-content">
+            <div class="photos-of-interest">
+                <img src="../images/jackson-1.5copy.webp" alt="photo" loading="lazy" width="400" height="600">
+                <img src="../images/jackson-1.7copy.webp" alt="photo" loading="lazy" width="400" height="600">
+                <img src="../images/jackson-2copy.webp" alt="photo" loading="lazy" width="400" height="600">
+                <img src="../images/jackson-3copy.jpg.webp" alt="photo" loading="lazy" width="400" height="600">
+                <img src="../images/jackson-4copy.jpg.webp" alt="photo" loading="lazy" width="400" height="600">
+                <img src="../images/jackson-5copy.webp" alt="photo"loading="lazy" width="400" height="600">
+            </div>
+        </div>
+
+</div>
+
+    <footer>
+        <p>&copy; 2024 Jackson Hole Chamber of Commerce</p>
+        <p>Last Updated: May 3, 2024</p>
+    </footer>    
+    
+</main>
+<script src="lazyload.js"></script>
+</body>
+</html>
