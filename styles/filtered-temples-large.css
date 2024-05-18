@@ -1,0 +1,99 @@
+ /* Fonts */
+ .ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-mono-bold {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-mono-regular-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-mono-bold-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+@media (min-width: 767px) {
+    header {
+        background-color: #f0f0f0; /* Change the background color as needed */
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* Title styling */
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    /* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+nav ul li a:hover {
+    background-color: #ccc;
+    color: #615c5c;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px; /* Add margin-top to separate from the top */
+}
+.Home {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Adjust the margin as needed to center vertically */
+}
+
+/* Figure styling */
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust the minimum width as needed */
+    gap: 20px; /* Adjust the gap between figures as needed */
+    justify-items: center; /* Center the figures horizontally */
+}
+
+figure {
+    width: 100%; /* Set the width of the figure */
+    max-width: 300px; /* Limit maximum width for larger screens */
+    border: 1px solid #ddd; /* Border color for the figure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+}
+
+figure img {
+    display: block;
+    width: 100%; /* Make the image fill the figure */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire figure */
+}
+
+figcaption {
+    padding: 10px;
+    background-color: #f0f0f0; /* Background color for the caption */
+    text-align: center;
+}
+#menu {
+    display: none;
+}
+footer {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 30px; /* Adjust the margin as needed to center vertically */
+}
+
+}
