@@ -105,7 +105,15 @@ const temples = [
  // Function to generate temple cards based on criteria
 function generateFilteredTempleCards(criteria) {
     const main = document.querySelector('main');
+   
+
     main.innerHTML = ''; // Clear previous temple cards
+
+    const h2 = document.createElement('h2');
+h2.textContent = 'Home'; // Set the text content of the <h2> tag
+h2.classList.add('Home');
+main.appendChild(h2);
+
 
     let filteredTemples = [];
 
