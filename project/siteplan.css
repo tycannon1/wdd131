@@ -1,0 +1,58 @@
+/*font*/
+.ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #F2EBDC;
+    color: #8C6751;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+div {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #334F0A;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.color-1 { background-color: #8C6751; }
+.color-2 { background-color: #334F0A; }
+.color-3 { background-color: #F2EBDC; }
