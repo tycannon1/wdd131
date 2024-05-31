@@ -1,0 +1,246 @@
+ /* Fonts */
+ .ubuntu-mono-regular {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.ubuntu-mono-bold {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ubuntu-mono-regular-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.ubuntu-mono-bold-italic {
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+body {
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+
+header {
+    background-color: #f0f0f0; /* Change the background color as needed */
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+/* Title styling */
+.logo {
+    width: 70px;
+    height: auto;
+}
+.banner1 {
+    width: 100%;
+    height: auto;
+    
+}
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.Home {
+    text-align: center; /* Center the text horizontally */
+    margin-top: 30px; /* Adjust the margin as needed to center vertically */
+}
+
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.thankyou {
+    text-align: center;
+}
+
+/* FORM STYLE */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="range"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Adjustments for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    h2 {
+        text-align: center;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    nav ul li a:hover {
+        background-color: #ccc;
+        color: #615c5c;
+    }
+}
+@media (max-width: 767px) {
+    
+    #menu {
+        display: block;
+    }
+
+    
+    .navigation.open {
+        display: block;
+    }
+    #menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+   
+    #menu .icon-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+    }
+    #menu.open .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu.open .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu.open .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    
+    .close-icon {
+        display: none;
+    }
+    
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: #b9b4e6;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navigation ul li {
+        margin-bottom: 10px;
+    }
+    
+    .navigation ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Ubuntu Mono', sans-serif;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    figure {
+        flex: 0 0 calc(50% - 20px); /* Two figures per row, with 20px margin */
+        margin: 20px;
+        border: 1px solid #ddd; /* Border color for the figure */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for a card-like effect */
+    }
+    
+    figure img {
+        display: block;
+        width: 100%; /* Make the image fill the figure */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    figcaption {
+        padding: 10px;
+        background-color: #f0f0f0; /* Background color for the caption */
+        text-align: center;
+    }
+    footer {
+        text-align: center; /* Center the text horizontally */
+        margin-top: 30px; /* Adjust the margin as needed to center vertically */
+    }
+
+}

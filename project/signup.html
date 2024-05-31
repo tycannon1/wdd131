@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Thrift</title>
+    <meta name="description" content="Global Thrift - Ty Cannon WDD 230">
+    <meta name="author" content="Ty Cannon">
+
+    <link rel="stylesheet" href="styles/thrift.css">
+    <link rel="stylesheet" href="styles/thrift-larger.css" media="screen and (min-width: 768px)">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Global Thrift">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://res.cloudinary.com/simpleview/image/upload/v1612195818/clients/denton/Vintage_Header_191277a2-4dd5-410a-bea5-d0ca3e2ab2ab.png">
+    <meta property="og:url" content="https://tycannon1.github.io/project/thrift">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="menu" aria-label="Toggle Navigation Menu">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="close-icon">X</span>
+    </button>
+    <header>
+        <img src="images/GTNLOGO.png" alt="Logo" class="logo">
+        <h1>GLOBAL THRIFT</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">HOME/SHOP</a></li>
+                <li><a href="stores.html">STORES</a></li>
+                <li><a href="signup.html">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="Home">
+        <h2>SIGN UP</h2>
+    </div>
+    <form method="get" action="record.html">
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]+" minlength="1"><br><br>
+    
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"><br><br>
+    
+        <label for="confirm_password">Confirm Password:</label><br>
+        <input type="password" id="confirm_password" name="confirm_password" required pattern="[A-Za-z0-9]{8,}" onblur="checkPasswordMatch()">
+    
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br> <!-- Removed pattern attribute -->
+        </div>
+
+        <label for="page_rating">Rate your shopping experience so far!</label><br>
+        <input type="range" id="page_rating" name="page_rating" min="1" max="10" step="1" oninput="displayRatingValue()"><br>
+        <span id="rating_value">5</span><br><br>
+    
+        <button type="submit">Submit</button>
+    
+    </form>
+    
+    <script>
+        function displayRatingValue() {
+            var ratingInput = document.getElementById("page_rating");
+            var ratingValueSpan = document.getElementById("rating_value");
+            ratingValueSpan.textContent = ratingInput.value;
+        }
+    
+        function checkPasswordMatch(event) {
+        console.log("Checking password match");
+        var password = document.getElementById("password");
+        var confirmPassword = document.getElementById("confirm_password");
+    
+        console.log("Password: " + password.value);
+        console.log("Confirm Password: " + confirmPassword.value);
+    
+        if (password.value !== confirmPassword.value) {
+            alert("Passwords do not match. Please try again.");
+            password.value = "";
+            confirmPassword.value = "";
+            password.focus();
+            if (event) {
+                event.preventDefault(); // Prevent form submission if event object is provided
+            }
+        }
+    }
+    
+    
+    </script>
+    
+    </main>
+    <footer>
+        <p id="copyright"></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/thrift.js"></script>
+</body>
+</html>
