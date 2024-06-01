@@ -114,6 +114,36 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
     background-color: #0056b3;
 }
+/* Grid view */
+#directory {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h2 {
+    font-size: small;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
 
 
 /* Adjustments for mobile responsiveness */

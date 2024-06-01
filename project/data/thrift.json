@@ -1,0 +1,59 @@
+[
+    {
+        "name": "Arctyrex Puffer Jacket",
+        "price": "$45",
+        "color": "Black",
+        "size": "Large",
+        "image": "../images/arcpuffer.webp"
+    },
+    {
+        "name": "BMW Jacket",
+        "price": "$55",
+        "color": "Blue",
+        "size": "Large",
+        "image": "../images/bmwjacket.jpg"
+    },
+    {
+        "name": "Versace Felt Pance",
+        "price": "$65",
+        "color": "Blue",
+        "size": "34,32",
+        "image": "../images/DSC_0853.webp"
+    },
+    {
+        "name": "Burberry Shirt",
+        "price": "$105",
+        "color": "Plaid",
+        "size": "Large",
+        "image": "../images/DSC_6131.webp"
+    },
+    {
+        "name": "Diesel Cargo Pants",
+        "price": "$55",
+        "color": "Tan",
+        "size": "Large",
+        "image": "../images/DSC_9145.webp"
+    },
+    {
+        "name": "Prada Cross Body",
+        "price": "$205",
+        "color": "Black",
+        "size": "Large",
+        "image": "../images/pradacrossbody.webp"
+    },
+    {
+        "name": "Offwhite Shorts",
+        "price": "$305",
+        "color": "Grey",
+        "size": "XL",
+        "image": "../images/shorts1245.png"
+    },
+    {
+        "name": "Carhart Work Pants",
+        "price": "$45",
+        "color": "Blue",
+        "size": "Medium",
+        "image": "../images/DSC_1644.webp"
+    }
+
+]
