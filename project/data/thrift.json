@@ -11,7 +11,7 @@
         "price": "$55",
         "color": "Blue",
         "size": "Large",
-        "image": "../images/bmwjacket.jpg"
+        "image": "../images/bmwjacket.webp"
     },
     {
         "name": "Versace Felt Pance",
@@ -46,7 +46,7 @@
         "price": "$305",
         "color": "Grey",
         "size": "XL",
-        "image": "../images/shorts1245.png"
+        "image": "../images/shorts1245.webp"
     },
     {
         "name": "Carhart Work Pants",

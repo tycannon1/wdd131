@@ -44,6 +44,29 @@
     </div>
     <form method="get" action="record.html">
 
+        <h2>Sign Up Requirements</h2>
+        <p>username:
+            It must contain only letters (A-Z, a-z) and numbers (0-9).
+            The minimum length is 1 character.</p>
+
+           <p> Password: The field is required.
+            It must contain only letters (A-Z, a-z) and numbers (0-9).
+            The minimum length is 8 characters.</p>
+
+            <p>Confirm Password:
+            It must match the password field.
+            It must contain only letters (A-Z, a-z) and numbers (0-9).
+            The minimum length is 8 characters.
+            An additional check is performed to ensure it matches the password.</p>
+
+           <p> Email:
+            It must be a valid email address.</p>
+
+            <p>Rate your shopping experience:
+            The field is a range input for rating.
+            The minimum value is 1, and the maximum value is 10.
+            The step increment is 1.</p>
+
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]+" minlength="1"><br><br>
     
@@ -97,6 +120,7 @@
     
     </main>
     <footer>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         <p id="copyright"></p>
         <p id="lastModified"></p>
     </footer>
